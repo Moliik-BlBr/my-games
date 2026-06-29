@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Игровой Портал</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            width: 90%;
+        }
+        .game-card {
+            background-color: #1f1f1f;
+            border: 2px solid #323232;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: #f0f0f0;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #646464;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+        }
+        .game-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #c83232; /* Красный акцент */
+        }
+        .game-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Выберите Игру</h1>
+
+    <div class="grid-container">
+        <!-- Карточка 1 -->
+        <a href="game1.html" class="game-card">
+            <h3>Ultimate Tic-Tac-Toe</h3>
+            <p>Продвинутые крестики-нолики на поле 9х9. Заставьте противника ходить туда, куда выгодно вам!</p>
+        </a>
+
+        <!-- Карточка 2 -->
+        <a href="game2.html" class="game-card" style="border-color: #3264c8;">
+            <h3 style="color: #3264c8;">Игра №2</h3>
+            <p>Ваша следующая мини-игра. Скоро здесь появится ее описание и геймплей.</p>
+        </a>
+
+        <!-- Карточка 3 -->
+        <a href="game3.html" class="game-card" style="border-color: #32c864;">
+            <h3 style="color: #32c864;">Игра №3</h3>
+            <p>Третья бесплатная игра для вашего веб-портала. Ожидает добавления кода.</p>
+        </a>
+    </div>
+
+</body>
+</html>
